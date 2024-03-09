@@ -1,17 +1,15 @@
 import Image from "next/image";
 import { Inter } from "next/font/google";
 import styles from "@/styles/Home.module.css";
+import { Code } from "./Code";
 
 const inter = Inter({ subsets: ["latin"] });
 
-export function Header() {
+export function Header({ code }) {
   return (
     <>
       <header className={styles.description}>
-        <p>
-          Get started by editing&nbsp;
-          <code className={styles.code}>src/pages/index.js</code>
-        </p>
+        <Code code={ code }/>
         <div>
           <a
             href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
