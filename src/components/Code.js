@@ -1,4 +1,4 @@
-import styles from "@/styles/Home.module.css";
+import styles from "./Code.module.css";
 
 export function Code({ code }) {
   return (
